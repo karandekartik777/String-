@@ -1,0 +1,11 @@
+write a python code to check wheather the string is palindromic or not
+
+def ispalindrome(s1):
+        
+    if s1==s1[::-1]:
+        print('strings are palindromic')
+    else:
+        print("strings are not palindromic")
+        
+s='kanak'
+print(ispalindrome(s))
