@@ -1,0 +1,16 @@
+
+#Ways to remove i’th character from string in Python
+
+
+def removeichar(test_str,pos):
+    new_str = ""
+     
+    for i in range(len(test_str)):
+        if i != pos:
+            new_str = new_str + test_str[i]
+     
+    # Printing string after removal
+    return("The string after removal of i'th character : " + new_str)
+    
+test_str = "kartikkirankarande"
+print(removeichar(test_str,3))
