@@ -1,0 +1,9 @@
+write a python programme to reversed the given string 
+
+def reversestr(s):
+    new_str = (s.split(" "))
+    reversedstr = " ".join(reversed(new_str))
+    return reversedstr
+    
+    
+print(reversestr("kartik kiran karande"))
