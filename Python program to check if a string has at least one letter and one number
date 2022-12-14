@@ -1,0 +1,13 @@
+def check_string_and_int(s):
+    str_flag=False
+    str_int=False
+    
+    for i in s:
+        if i.isdigit():
+            str_flag=True
+        if i.isalpha():
+            str_int=True
+            
+    return str_flag and str_int
+    
+print(check_string_and_int("thisiskartik3"))
