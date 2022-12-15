@@ -1,0 +1,27 @@
+Input : geeksforgeeks
+Output : Not Accepted
+All vowels except 'a','i','u' are not present
+
+Input : ABeeIghiObhkUul
+Output : Accepted
+All vowels are present
+
+
+--------------------------------------------------------------------------------------------
+def checkvowels(string):
+    string=string.lower()
+    
+    check_set=set("aeiou")
+    s=set({})
+    
+    for i in string:
+        if i in check_set:
+            s.add(i)
+        else:
+            pass
+    if len(check_set)==len(s):
+        print("accepted ")
+    else:
+        print("not accepted ")
+        
+print(checkvowels("ABeeIghiObhkUul"))
