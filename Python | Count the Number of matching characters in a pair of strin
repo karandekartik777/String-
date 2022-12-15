@@ -1,0 +1,13 @@
+def checkcount_matchedstring(str1,str2):
+    
+    string1=set(str1)
+    string2=set(str2)
+    
+    new_str = string1 & string2
+    
+    nos_of_matching_string = print(str(len(new_str)))
+    
+
+str1 = 'aabcddekll12@' 
+str2 = 'bb2211@55k'
+print(checkcount_matchedstring(str1,str2))
