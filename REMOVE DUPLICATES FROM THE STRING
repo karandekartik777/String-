@@ -1,0 +1,10 @@
+Remove all duplicates from a given string in Python
+
+
+string = 'kartikkarakakaka'
+NEW_STR = ""
+for i in string:
+    if i not in NEW_STR:
+        NEW_STR+=i
+print(NEW_STR)
+    
