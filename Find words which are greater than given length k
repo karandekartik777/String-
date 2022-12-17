@@ -1,0 +1,14 @@
+#Find words which are greater than given length k
+
+def word_get(str, word_len):
+    new_str=str.split(" ")
+    arr=[]
+    
+    for i in new_str:
+        if len(i)>word_len:
+            arr.append(i)
+    return arr
+    
+word_len= 3
+word="my name is anothy gavade"
+print(word_get(word,word_len))
